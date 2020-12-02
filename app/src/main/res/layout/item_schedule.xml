@@ -32,16 +32,45 @@
                 android:gravity="top|right"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/itemScheduleSubtitulo"
-                tools:text="A.M."/>
+                tools:text="A.M." />
 
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginLeft="10dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/tvItemScheduleConferenceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                tools:text="Nombre de la conferencia" />
+
+            <TextView
+                android:id="@+id/tvItemScheduleConferenceItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                tools:text="Speaker name" />
+
+            <TextView
+                android:id="@+id/tvItemScheduleTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#FFFFFF"
+                tools:text="Tag" />
         </LinearLayout>
     </LinearLayout>
 

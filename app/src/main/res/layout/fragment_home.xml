@@ -141,6 +141,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/altoImageViewHome"
                         android:src="@drawable/platzi_conf_3"
+                        android:scaleType="centerCrop"
                         />
                     <View
                         android:layout_width="match_parent"
