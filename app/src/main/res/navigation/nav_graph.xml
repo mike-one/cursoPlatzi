@@ -42,7 +42,11 @@
         android:id="@+id/navUbicacionFragment"
         android:name="mike.machine.platziconf.ui.fragments.UbicationFragment"
         android:label="fragment_ubication"
-        tools:layout="@layout/fragment_ubication" />
+        tools:layout="@layout/fragment_ubication" >
+        <action
+            android:id="@+id/action_navUbicacionFragment_to_ubicationDetailFragmentDialog"
+            app:destination="@id/ubicationDetailFragmentDialog" />
+    </fragment>
 
     <dialog
         android:id="@+id/sepakerDetailFragmentDialgo"
@@ -62,6 +66,7 @@
         android:id="@+id/ubicationDetailFragmentDialog"
         android:name="mike.machine.platziconf.ui.fragments.UbicationDetailDialogFragment"
         android:label="UbicationDetailFragmentDialog"
+        tools:layout="@layout/fragment_ubication_detail_dialog"
         
         />
 
