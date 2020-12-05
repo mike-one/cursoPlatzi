@@ -1,4 +1,4 @@
-package mike.machine.platziconf.ui.activities
+package mike.machine.platziconf.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,16 +1,10 @@
-package mike.machine.platziconf
+package mike.machine.platziconf.view.ui.activities
 
-import android.icu.util.Calendar
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.ktx.Firebase
-import mike.machine.platziconf.model.Conference
-import mike.machine.platziconf.model.Speaker
-import org.json.JSONArray
-import org.json.JSONObject
+import mike.machine.platziconf.R
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.N)

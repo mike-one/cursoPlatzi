@@ -1,4 +1,4 @@
-package mike.machine.platziconf.ui.fragments
+package mike.machine.platziconf.view.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
