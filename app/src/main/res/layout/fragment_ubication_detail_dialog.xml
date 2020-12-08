@@ -17,6 +17,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -44,99 +45,110 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:background="@drawable/shape_parrafo"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/shape_parrafo"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/tvDetailUbicationName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
                             android:layout_margin="5dp"
                             android:gravity="center_horizontal"
+                            android:text="Lugar PlatziCOnf"
                             android:textColor="@color/colorPrimary"
                             android:textSize="30sp"
-                            android:textStyle="bold"
-                            android:text="Lugar PlatziCOnf" />
+                            android:textStyle="bold" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="20dp"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:padding="20dp">
+
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_gravity="center"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/ic_ubication"/>
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_ubication" />
+
                             <TextView
+                                android:id="@+id/tvDetailUbicationAddress"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5dp"
                                 android:gravity="left"
+                                android:text="Dirección"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="15sp"
-                                android:text="Dirección" />
+                                android:textSize="15sp" />
 
                         </LinearLayout>
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/colorPrimary"
-                            />
+                            android:background="@color/colorPrimary" />
+
                         <LinearLayout
+                            android:id="@+id/llPhonePlace"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="20dp"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:padding="20dp">
+
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_gravity="center"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/ic_phone"/>
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_phone" />
+
                             <TextView
+                                android:id="@+id/tvDetailUbicationPhone"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5dp"
                                 android:gravity="left"
+                                android:text="Telefono lugar"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="15sp"
-                                android:text="Telefono lugar" />
+                                android:textSize="15sp" />
 
                         </LinearLayout>
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/colorPrimary"
-                            />
+                            android:background="@color/colorPrimary" />
+
                         <LinearLayout
+                            android:id="@+id/llWebSite"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="20dp"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:padding="20dp">
+
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_gravity="center"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/ic_url"/>
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_url" />
+
                             <TextView
+                                android:id="@+id/tvDetailUbicationWebSite"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="5dp"
                                 android:gravity="left"
+                                android:text="Sitio Web"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="15sp"
-                                android:text="Sitio Web" />
+                                android:textSize="15sp" />
 
                         </LinearLayout>
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/colorPrimary"
-                            />
+                            android:background="@color/colorPrimary" />
 
                     </LinearLayout>
 

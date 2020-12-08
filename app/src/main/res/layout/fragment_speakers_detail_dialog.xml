@@ -17,6 +17,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -95,6 +96,7 @@
                             tools:text="Trabajo" />
 
                         <ImageView
+                            android:id="@+id/ivDetailTwitter"
                             android:layout_marginTop="10dp"
                             android:layout_width="40dp"
                             android:layout_gravity="center"

@@ -34,7 +34,9 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener):RecyclerView.Adapt
         holder.tvConferenceHour.text = hourFormat
         holder.tvConferenceAMPM.text = simpleFromatAMPM.format(conference.datetime).toUpperCase()
 
-        holder.itemView.setOnClickListener { scheduleListener.onConferenceClicked(conference,position) }
+        holder.itemView.setOnClickListener {
+            scheduleListener.onConferenceClicked(conference,position)
+        }
     }
 
     override fun getItemCount()= listConference.size

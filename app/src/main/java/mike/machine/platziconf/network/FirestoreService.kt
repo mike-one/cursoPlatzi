@@ -30,7 +30,8 @@ class FirestoreService {
 
     fun getSechedule(callback: Callback<List<Conference>>){
         firebaseFirestore.collection(CONFERENCES_COLLECTION_NAME)
-            .get().addOnSuccessListener {result ->
+            .get().
+            addOnSuccessListener {result ->
                 for (doc in result){
                     val list = result.toObjects(Conference::class.java)
                     callback.onSuccess(list)

@@ -27,7 +27,9 @@ class SpeakerAdapter(val speakerListener: SpeakerListener):RecyclerView.Adapter<
             .apply(RequestOptions.circleCropTransform()) //Convertir imágen en circular
             .into(holder.ivSpeakerImage) //En dónde se debe colocar
 
-        holder.itemView.setOnClickListener { speakerListener.onSpeakerCliked(speaker,position) }
+        holder.itemView.setOnClickListener {
+            speakerListener.onSpeakerCliked(speaker, position)
+        }
     }
 
     override fun getItemCount()= listSpeaker.size

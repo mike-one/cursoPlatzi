@@ -4,6 +4,9 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
+import kotlinx.android.synthetic.main.activity_main.*
 import mike.machine.platziconf.R
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +14,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setActionBar(findViewById(R.id.toolbarMain))
+        configNav()
+
+
 /* ///// Para insertar los datos a Firestone
         val jsonArr = JSONArray("[\n" +
                 "            {\n" +
@@ -331,5 +338,8 @@ class MainActivity : AppCompatActivity() {
         }
         */
 
+    }
+    fun configNav(){
+        NavigationUI.setupWithNavController(bnvMenu, Navigation.findNavController(this,R.id.fragContent))
     }
 }
