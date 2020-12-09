@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mike.machine.platziconf">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_platzi"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -15,14 +17,15 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDmzvoktUwDqc7Qj2Q0KOEQBy2E4QfGOyo"/>
 
-        <activity android:name="mike.machine.platziconf.view.ui.activities.SplashscreenActivity"></activity>
-        <activity android:name=".view.ui.activities.MainActivity">
+        <activity android:name="mike.machine.platziconf.view.ui.activities.SplashscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity android:name=".view.ui.activities.MainActivity"></activity>
     </application>
 
 </manifest>

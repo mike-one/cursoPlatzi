@@ -20,13 +20,10 @@ class ScheduleViewModel: ViewModel() {
         firestoreService.getSechedule(object : Callback<List<Conference>> {
             override fun onFailed(exception: Exception) {
                 processFinished()
-                Log.e("TAG", "Falló esta madre");
-                Log.e("TAG", "Falló esta madre");
             }
 
             override fun onSuccess(result: List<Conference>?) {
                 processFinished()
-                Log.d("TAG", "Sí funcionó!");
             }
         })
     }

@@ -32,7 +32,8 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/banner_platzi_conf" />
+                        android:src="@drawable/banner_platzi_conf"
+                        android:layout_marginTop="1dp"/>
 
                     <View
                         android:layout_width="match_parent"
@@ -64,7 +65,9 @@
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
                         android:text="@string/inicio_frag_tv_que_es_resp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/tamanioSubtitulo" />
+                        android:textSize="@dimen/tamanioSubtitulo"
+                        android:layout_marginBottom="10dp"
+                        />
 
 
                 </LinearLayout>
@@ -74,9 +77,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/marginCardViewHome"
                 android:elevation="0dp"
-                app:cardCornerRadius="@dimen/cardCornerRadius">
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -87,7 +91,9 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/platzi_conf_2" />
+                        android:src="@drawable/platzi_conf_2"
+                        android:scaleType="centerCrop"
+                        />
 
                     <View
                         android:layout_width="match_parent"
@@ -119,7 +125,9 @@
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
                         android:text="@string/inicio_frag_tv_que_es_resp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/tamanioSubtitulo" />
+                        android:textSize="@dimen/tamanioSubtitulo"
+                        android:layout_marginBottom="10dp"
+                        />
 
                 </LinearLayout>
 
@@ -130,7 +138,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/marginCardViewHome"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="@dimen/cardCornerRadius">
 
@@ -141,6 +151,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/ivFragmentHomeVolley"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/altoImageViewHome"
                         android:src="@drawable/platzi_conf_3"
@@ -152,12 +163,13 @@
                         android:background="@color/colorPrimary"/>
 
                     <TextView
+                        android:id="@+id/tvFragmentHomeSubtituloVolley"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/marginHomeSubtitulo"
                         android:layout_marginLeft="@dimen/marginHomeSubtitulo"
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
-                        android:text="@string/inicio_frag_tv_info"
+                        tools:text="@string/inicio_frag_tv_info"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="@dimen/tamanioTitulo"
                         android:textStyle="bold"
@@ -169,14 +181,16 @@
                         android:layout_marginTop="10dp"/>
 
                     <TextView
+                        android:id="@+id/tvFragmentHomeContenidoTexto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
                         android:layout_marginLeft="@dimen/marginHomeSubtitulo"
                         android:layout_marginTop="@dimen/marginHomeSubtitulo"
-                        android:text="@string/inicio_frag_tv_info_resp"
+                        tools:text="@string/inicio_frag_tv_info_resp"
                         android:textSize="@dimen/tamanioSubtitulo"
                         android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="10dp"
                         />
 
                 </LinearLayout>

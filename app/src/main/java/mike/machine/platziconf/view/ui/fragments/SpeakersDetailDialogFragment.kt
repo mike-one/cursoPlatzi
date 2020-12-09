@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_speakers_detail_dialog.*
 import mike.machine.platziconf.R
@@ -48,10 +50,15 @@ class SpeakersDetailDialogFragment : DialogFragment() {
         toolbarSpeaker.title = speaker.name
 
         tvDetailSpeaker.text = speaker.name
-        tvDetailSpeakerJobTitle.text =speaker.jobtitle
+        tvDetailSpeakerJobTitle.text = speaker.jobtitle
         tvDetailSpeakerTrabajo.text = speaker.workplace
 //        ivDetailTwitter.
         tvDetailSpeakerDescription.text = speaker.biography
+        Glide.with(view.context)
+            .load(speaker.image)
+            .apply(RequestOptions.circleCropTransform())
+            .into(profile_image)
+
     }
 
     override fun onStart() {
