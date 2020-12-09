@@ -1,0 +1,10 @@
+# cursoPlatzi
+
+**Curso de Kotlin en Android - Platzi**
+
+El contenido del curso es el siguiente: [link](https://platzi.com/clases/kotlin-android/ "link")
+
+Adjunto algunas imágenes de la aplicación realizada.
+
+[![SplashScreen](1 "SplashScreen")](https://lh3.googleusercontent.com/9qLt3Eae0B7NLds7o-wQc7hdlf2-h4oNFm0Y4CqYWZ4EYz43n26VCG-kVAsiLGxCDjZEsKY-GCovE89i2roWAwozp5n20_gOf0yCfnQSV91wo7VLpRycPnIK_nQkpY6vv_-cXXX7nm6bT2kB50zRi16FrRbbULViI0uM5iwlMJlCCfqoXvSYU6J20DQUGH5DI1J4vMJsfnM6Z9cXaKo_VqTBLwX3T2zal6AW82lK_3R1I03cahlKeWcSESnxC1MDyMBlAZVygn-3DRpa_JqxBehBxEFo6JfT2gbKQ-v_yJNVuw3CWeaFMAGOGgyB2PmnzQpIjVmrRdC8tVZLVooX_ta_54nkSMY1pBsUHCkE62d4fDWlVmFVXQXG0HFsYCYE8zRANUl-udvm5QRjJeWgiug-7XBFUgL_5m5M-T64yrd_2UoftIg_XDcIxd6pc-ZijPxFiPAWfNLfZ7QipLGEh2kN6vojul4kl0y_Y50Wc9gqMPdQKat6dYz5AO6Q5z7pJrkMNEhqq_a3LvT-aTO9Vi4DxsIGLIDfkJaqkA5to3ejdFeK_QWFkdbOxyN8LxCXLNmqefeSDEedBzMycM1CY9Ck0gW2Pye7inGGUqUhRvKivLhbZgqxOBCFcfbacr13ttIjFrthYXc824RL-N59uszKPPcMEh41GkbAg-JqhQrtHJGs1Dey3tDY-luvHQ=w449-h943-no?authuser=0 "SplashScreen")
+
