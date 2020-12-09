@@ -1,6 +1,4 @@
-# cursoPlatzi
-
-**Curso de Kotlin en Android - Platzi**
+#**Curso de Kotlin en Android - Platzi**
 
 El contenido del curso es el siguiente: [link](https://platzi.com/clases/kotlin-android/ "link")
 
