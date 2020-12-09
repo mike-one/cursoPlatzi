@@ -1,13 +1,17 @@
 package mike.machine.platziconf.view.ui.fragments
 
+import android.graphics.Bitmap
+import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
+import com.android.volley.toolbox.ImageRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.*
@@ -44,9 +48,11 @@ class HomeFragment : Fragment() {
 
         val tvFragmentHomeSubtituloVolley = view?.findViewById<TextView>(R.id.tvFragmentHomeSubtituloVolley)
         val tvFragmentHomeContenidoTexto = view?.findViewById<TextView>(R.id.tvFragmentHomeContenidoTexto)
+        val ivFragmentHomeVolley = view?.findViewById<ImageView>(R.id.ivFragmentHomeVolley)
 
         val queue = Volley.newRequestQueue(activity)
         val url:String = "https://www.ces.tech/About-CES.aspx"
+        val urlImagen:String = "https://cdn.ces.tech/ces/media/home/ces2021_world_1920x816.jpg?ext=.jpg"
 
         val stringRequest = StringRequest(Request.Method.HEAD, url, Response.Listener {response ->
             tvFragmentHomeSubtituloVolley?.text = "HEAD del http"
@@ -59,6 +65,15 @@ class HomeFragment : Fragment() {
         }, Response.ErrorListener { response ->
             tvFragmentHomeContenidoTexto?.text = "Error al hacer la petición GET"
         })
+        val imageRequest = ImageRequest(urlImagen,Response.Listener<Bitmap> { bitmap ->
+            ivFragmentHomeVolley?.setImageBitmap(bitmap)
+        },
+            0,0, null,Response.ErrorListener {
+
+            }
+        )
+
+        queue.add(imageRequest)
         queue.add(stringRequest)
         queue.add(bodyRequest)
 
